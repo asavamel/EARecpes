@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="keywords" content="Contact Coastal dishes, Contact Kenya Dishes, Contact Kenya meal" >
+    <meta name="description" content="East African Recipes aims to give sample recipes of traditional foods that are typical in the Coastal regions of the East African country of Kenya  and help individuals who seek diversity in the food they eat have geographically focused recipe set without having to or before travelling to these specific regions.">
+    <link rel="stylesheet" type="text/css" href="../css/style.css">
+    <link rel="icon" href="../Images/favicon.ico" type="image/x-icon">
+	<title>East African Recipes</title>
+</head>
+
+<body>
+	<script>
+		function doConfrm()
+		{
+			alert("For Enhancement");
+		}
+		
+		// Function clears the fields
+		function doReset()
+		{
+			// clear text inputs
+			document.getElementById("fName").value = "";
+			document.getElementById("lName").value = "";
+			document.getElementById("email").value = "";
+			document.getElementById("phone").value = "";
+						
+			//clear radio buttons and check boxes
+			document.getElementById("newsletter").checked = true;
+					
+			// clear drop down list
+			document.getElementById("refr").selectedIndex = 0;		
+		
+			//Refresh page
+			$('.ui-checkbox input').checkboxradio('refresh');
+			$('.ui-radio input').checkboxradio('refresh');
+			$('#refr').selectmenu('refresh',true);
+			document.getElementById("fName").focus();
+		}
+	</script>
+    <header>
+    	<!--Header navigation links-->
+        <nav>
+        	<ul>
+            	<li><a href="../index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="breakfast.html">Breakfasts</a></li>
+                <li><a href="meals.html">Meals</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <!--Main body Division-->
+    <div id="main" class="contact">
+    	<div id="breadcrumbs">
+			<a href="../index.html">Home</a> &gt; <a>Contact Us</a> 
+		</div>
+        
+        <form>
+        	<label for="fName">First Name:</label>
+            <input type="text" id="fName" name="fName" />
+            <label for="lName"><br />Last Name:</label>
+            <input type="text" id="lName" name="lName" />
+            <label for="email"><br />e-mail:</label>
+            <input type="email" id="email" name="email" />
+            <label for="phone"><br />Phone:</label>
+            <input type="tel" id="phone" name="phone" />
+            
+            <ul>
+            	<li><input type="checkbox" name="newsletter" id="newsletter" class="chkbx" checked="checked"/>I would like to sign up for the E A Recipe Newsletter</li>
+            </ul>
+            
+            <label for="refr">I was referred to this site by:</label>
+            <select name="refr" id="refr">
+            	<option value="advt">Advertisement</option>
+                <option value="friend">Friend</option>
+                <option value="google">Google</option>
+                <option value="social">Social Media</option>
+                <option value="other">Other</option>
+            </select>
+            
+            <label for="suggquest"><br />Recipe Suggestions or Questions</label>
+            <textarea id="suggquest" name="suggquest" rows="3" cols="25"></textarea>
+            
+            <div class="btn">
+                <input type="submit" id="submit" value="submit" class="btn" onClick="doConfrm();" />
+                <input type="reset" id="reset" value="reset" class="btn"  onClick="doReset();" />
+            </div>
+        </form>
+        
+        <address>
+            <p>We are located at:<br>
+                323 Warrigal Road,<br>
+                Chadstone, VIC 3148, Australia.</p>
+                
+            <p>Phone Number</p>
+                <p><a class="mobile" href="tel:61398766789">+61 (03) 9876-6789</a>
+                <a class="desktop">+61 (03) 9876-6789</a></p>
+                    
+            <p>E-mail Address</p>
+            <p><a href="mailto:chakula@newfoods.com.au">chakula@newfoods.com.au</a></p>
+        </address>
+    </div>
+    
+    <footer>
+    	<div id="copyright">
+			<p>&copy; Copyright East African Recipes 2017. All Rights Reserved.</p>
+        </div>
+        
+        <div class="external">
+        	<p>For Additional Resources:<br /></p>
+            <p><a href="https://tanzanianswahilicuisine.weebly.com/" target="_blank">Tanzanian Swahili Cuisine</a></p>
+            <p><a href="https://www.swahilidelicacies.com" target="_blank">Swahili Delicacies</a></p>
+            <p><a href="http://swahilimomkitchen.blogspot.com.au" target="_blank">Swahili Mom's Kitchen</a></p>
+            <p><a href="http://mapishiclassic.blogspot.com.au" target="_blank">Mapishi Classic</a></p>
+        </div>
+    </footer>
+</body>
+</html>

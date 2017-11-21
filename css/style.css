@@ -1,0 +1,98 @@
+/* CSS Document */
+
+/* Style for the body*/
+body{
+	font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+	color: #000000;
+}
+
+/* Style for header*/
+header{
+	background-color: #1787CC;
+	opacity: 0.3;
+	background-position: center;
+  	background-size: cover;
+	z-index: -1;
+}
+
+/* Style for lists*/
+ul{
+	width: auto;
+}
+
+ul li{
+	text-decoration: none;
+	text-align: center;
+	display: inline-block;
+	padding: 1em;
+	margin-top: 0.75em;
+	margin-bottom: 0.75em;
+}
+
+/* Style for entire table*/
+table{
+	width: 80%;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+/* Style for table borders*/
+table, tr, th, td{
+	border-collapse: collapse;
+	border: solid 0.1em #000000;
+	padding: 1em;
+}
+
+/* Style for table data*/
+td{
+	text-align: center;
+}
+
+/* Style for caption*/
+caption{
+	font-size: 2em;
+	padding: 1em;
+	margin-top: 1em;
+}
+
+/* Style for text*/
+p{
+	text-align: center;
+}
+
+h1, h2, h3, header{
+	text-align: center;
+}
+
+/* Style for images*/
+img{
+	max-width: 100%;
+}
+
+/* Style for footer*/
+footer p{
+	display: inline-block;
+	margin-left: 1em;
+	margin-right: 1em;
+	text-align: centre;
+}
+
+/* Style for Tablets*/
+@media only screen and (min-width: 481px){
+	
+}
+
+/* Style for desktop view port*/
+@media only screen and (min-width: 769px){
+	.homelink{
+		text-align: center;
+		text-decoration: none;
+	}
+	
+	.homelink:hover{
+		-webkit-animation-fill-mode: forwards;
+		animation-duration: 0.5s;
+		animation-fill-mode: forwards;
+	}
+	
+}
