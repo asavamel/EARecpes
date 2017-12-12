@@ -8,47 +8,97 @@ body{
 
 /* Style for header*/
 header{
-	background-color: #1787CC;
-	opacity: 0.3;
+	/*background-color: #1787CC;
 	background-position: center;
-  	background-size: cover;
-	z-index: -1;
+  	background-size: cover;*/
+	height: 18rem;
+	background-image: url(../Images/chungu_HomePage.jpg);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	
 }
 
-/* Style for lists*/
-ul{
-	width: auto;
+/* Style for menu items*/
+.menuMobile, .menuDesktop{
+	background-color: #1787CC;
+	background-position: center;
+	margin-top: 1rem;
+	width: 15rem;
 }
 
-ul li{
-	text-decoration: none;
-	text-align: center;
+/* Style for mobile view menu button*/
+.menuMobile{
 	display: inline-block;
-	padding: 1em;
-	margin-top: 0.75em;
-	margin-bottom: 0.75em;
+	overflow: hidden;
 }
 
-/* Style for entire table*/
+/*.menuMobile a{
+    float: left;
+    font-size: 16px;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}*/
+
+.menuMobile .menuBtn{
+    cursor: pointer;
+    font-size: 1.2em;    
+    border: none;
+    outline: none;
+    /*color: #1787CC;*/
+    padding: 14px 16px;
+    background-color: #1787CC;
+}
+
+.dropdownContent{
+    display: none;
+    position: absolute;
+    background-color: #1787CC;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdownContent a{
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.show{
+    display: block;
+}
+
+/* Style to hide desktop view menu*/
+.menuDesktop{
+	display: none;
+}
+
+/* Style for entire table on about.html page*/
 table{
 	width: 80%;
 	margin-left: auto;
 	margin-right: auto;
 }
 
-/* Style for table borders*/
+/* Style for table borders on about.html page*/
 table, tr, th, td{
 	border-collapse: collapse;
 	border: solid 0.1em #000000;
 	padding: 1em;
 }
 
-/* Style for table data*/
+/* Style for table data on about.html page*/
 td{
 	text-align: center;
 }
 
-/* Style for caption*/
+/* Style for caption in the table on about.html page*/
 caption{
 	font-size: 2em;
 	padding: 1em;
@@ -58,6 +108,7 @@ caption{
 /* Style for text*/
 p{
 	text-align: center;
+	z-index: 1;
 }
 
 h1, h2, h3, header{
@@ -67,32 +118,173 @@ h1, h2, h3, header{
 /* Style for images*/
 img{
 	max-width: 100%;
+	z-index: 1;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+figure img{
+	max-width: 100%;
+	margin-left: auto;
+	margin-right: auto;
 }
 
 /* Style for footer*/
-footer p{
-	display: inline-block;
-	margin-left: 1em;
-	margin-right: 1em;
-	text-align: centre;
+footer{
+	font-size: .80em;
+	margin: 2em 1em;
+	text-align: center;
+	border-top: solid 0.2em #0B72B2;
+}
+
+/* Style for form element on contact.html page*/
+form{
+	text-align: center;
+}
+
+/* Style for top selection*/
+#main h2 a, .homelink h2 a{
+	text-decoration: none;
 }
 
 /* Style for Tablets*/
 @media only screen and (min-width: 481px){
+	/* Style to hide mobile view menu*/
+	.menuMobile{
+		display: none;
+	}
+	
+	/* Style to hide desktop view menu*/
+	.menuDesktop{
+		display: inline-block;
+	}
+	
+	header{
+		height: 27rem;
+	}
+
+	/* Style for menu list*/
+	ul{
+		width: auto;
+	}
+	
+	ul li{
+		text-decoration: none;
+		text-align: center;
+		display: inline-block;
+		padding: 1em;
+		margin-top: 0.75em;
+		margin-bottom: 0.75em;
+	}
+	
+	ul li a:hover{
+		text-size: 1.6em;
+		color: #FF0305;
+	}
+
+	/* Style for menu items*/
+	.menuMobile, .menuDesktop{
+		width: 35rem;
+	}
+	
+	/* Style for footer*/
+	footer{
+		font-size: .80em;
+		margin: 2em 1em;
+		text-align: center;
+		border-top: solid 0.2em #0B72B2;
+	}
+
+	footer p{
+		display: inline-block;
+	}
 	
 }
 
 /* Style for desktop view port*/
 @media only screen and (min-width: 769px){
-	.homelink{
-		text-align: center;
-		text-decoration: none;
+	/* Style to hide mobile view menu*/
+	.menuMobile{
+		display: none;
 	}
 	
-	.homelink:hover{
-		-webkit-animation-fill-mode: forwards;
-		animation-duration: 0.5s;
-		animation-fill-mode: forwards;
+	/* Style to hide desktop view menu*/
+	.menuDesktop{
+		display: inline-block;
 	}
+	
+	header{
+		height: 32rem;
+	}
+	
+	/* Style for menu list*/
+	ul{
+		width: auto;
+	}
+	
+	ul li{
+		text-decoration: none;
+		text-align: center;
+		display: inline-block;
+		padding: 1em;
+		margin-top: 0.75em;
+		margin-bottom: 0.75em;
+		justify-content: space-between;
+	}
+	
+	ul li a:hover{
+		text-size: 1.6em;
+		color: #FF0305;
+	}
+	
+	/* Style for menu items*/
+	.menuMobile, .menuDesktop{
+		width: 45rem;
+	}
+	
+	/* Styles for homepage links to meals and breakfasts*/
+	.homelink{
+		color: #000000;
+		font-size: 1em;
+		animation-name: homeanimate;
+		animation-fill-mode: backwards;
+		animation-direction: forwards;
+		animation-duration: 4s;
+		animation-delay: 1s;
+		-webkit-animation-name: homeanimate;
+		-webkit-animation-fill-mode: backwards;
+		-webkit-animation-direction: forwards;
+		-webkit-animation-duration: 5s;
+		-webkit-animation-delay: 1s;
+		
+	}
+	
+	@keyframes homeanimate{
+		0% {font-size: 1em; color: #000000;}
+		25% {font-size: 1.25em; color: #FF0305;}
+		50% {font-size: 1.5em; color: color: #1787CC;}
+		75% {font-size: 1.75em; color: #FF0305;}
+		100% {font-size: 2em; color: #1787CC;}
+	}
+	/*Style to enable Safari 4.0 use of this item*/
+	@-webkit-keyframes homeanimate{
+		0% {font-size: 1em; color: #000000;}
+		25% {font-size: 1.25em; color: #FF0305;}
+		50% {font-size: 1.5em; color: color: #1787CC;}
+		75% {font-size: 1.75em; color: #FF0305;}
+		100% {font-size: 2em; color: #1787CC;}
+	
+	/* Style for footer*/
+	footer{
+		font-size: .80em;
+		margin: 2em 1em;
+		text-align: center;
+		border-top: solid 0.2em #0B72B2;
+	}
+	
+	footer p{
+		display: inline-block;
+	}
+
 	
 }

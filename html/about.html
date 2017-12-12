@@ -7,20 +7,34 @@
     <meta name="description" content="East African Recipes aims to give sample recipes of traditional foods that are typical in the Coastal regions of the East African country of Kenya  and help individuals who seek diversity in the food they eat have geographically focused recipe set without having to or before travelling to these specific regions.">
     <link rel="stylesheet" type="text/css" href="../css/style.css">
     <link rel="icon" href="../Images/favicon.ico" type="image/x-icon">
+    <script src="../script/script.js"></script>
 	<title>East African Recipes</title>
 </head>
 
 <body class="about">
 	<header>
-    	<!--Header navigation links-->
-   	  <nav>
-        	<ul>
-            	<li><a href="../index.html">Home</a></li>
-                <li><a href="breakfast.html">Breakfasts</a></li>
-                <li><a href="meals.html">Meals</a></li>
-                <li><a href="contact.html">Contact us</a></li>
-            </ul>
-        </nav>
+    	<div class="menuDesktop">
+            <!--Header navigation links-->
+            <nav>
+                <ul>
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="breakfast.html">Breakfasts</a></li>
+                    <li><a href="meals.html">Meals</a></li>
+                    <li><a href="contact.html">Contact us</a></li>
+                </ul>
+            </nav>
+        </div>
+        
+        <div class="menuMobile">
+        	<button class="menuBtn" onclick="doMenu();">&#9776; Menu</button>
+            <div class="dropdownContent" id="menuDropdown">
+              <a href="../index.html">Home</a>
+              <a href="breakfast.html">Breakfasts</a>
+              <a href="meals.html">Meals</a>
+              <a href="contact.html">Contact us</a>
+            </div>
+  
+        </div>
     </header>
     
     <!--Main body Division-->

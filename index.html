@@ -7,32 +7,44 @@
     <meta name="description" content="East African Recipes aims to give sample recipes of traditional foods that are typical in the Coastal regions of the East African country of Kenya  and help individuals who seek diversity in the food they eat have geographically focused recipe set without having to or before travelling to these specific regions.">
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <link rel="icon" href="Images/favicon.ico" type="image/x-icon">
+    <script src="script/script.js"></script>
 	<title>East African Recipes</title>
 </head>
 
 <body>
 	<header>
-    	<!--Header navigation links-->
-    	<nav>
-        	<ul>
-            	<li><a href="html/about.html">About Us</a></li>
-                <li><a href="html/breakfast.html">Breakfasts</a></li>
-                <li><a href="html/meals.html">Meals</a></li>
-                <li><a href="html/contact.html">Contact us</a></li>
-            </ul>
-        </nav>
+    	<div class="menuDesktop">
+            <!--Header navigation links-->
+            <nav>
+                <ul>
+                    <li><a href="html/about.html">About Us</a></li>
+                    <li><a href="html/breakfast.html">Breakfasts</a></li>
+                    <li><a href="html/meals.html">Meals</a></li>
+                    <li><a href="html/contact.html">Contact us</a></li>
+                </ul>
+            </nav>
+        </div>
         
-        <img src="Images/chungu_HomePage.jpg" alt="Cooking Pot Image">
+        <div class="menuMobile">
+        	<button class="menuBtn" onclick="doMenu();">&#9776; Menu</button>
+            <div class="dropdownContent" id="menuDropdown">
+              <a href="html/about.html">About Us</a>
+              <a href="html/breakfast.html">Breakfasts</a>
+              <a href="html/meals.html">Meals</a>
+              <a href="html/contact.html">Contact us</a>
+            </div>
+  
+        </div>
     </header>
     
     <!--Main body Division-->
     <div id="main">
-    	<h1 style="text-align: center;">Top selections for the week</h1>
+    	<h2 style="text-align: center;" id="topMain"><a href="html/meals.html#topSelect">Top selection for the week</a></h2>
         
         <div class="homelink">
-        	<h3><a href="html/breakfast.html">Breakfasts<br /><br /></a></h3>
+        	<h2><a href="html/breakfast.html">Breakfasts</a></h2>
             
-            <h3><a href="html/meals.html">Meals<br /><br /></a></h3>
+            <h2><a href="html/meals.html">Meals</a></h2>
         </div>
         
     </div>
